@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="google-signin-client_id" content="164497556709-ujucn0p6jh9lt0cajb6kak67c1ln2ci5.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 	</head>
 	<body class="is-preload">
 
@@ -19,6 +21,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="index.html">CatchUp</a></h1>
+						<div class="g-signin2" data-onsuccess="onSignIn"></div>
 						<nav class="links">
 							<ul>
 								<li><a href="#">פרופיל</a></li>
@@ -30,7 +33,7 @@
 								  </ul></ul>-->
 								<li><a href="#">אלופים</a></li>
 								<li><a href="#">הישגים</a></li>
-								<li><a href="#">יומן אישי</a></li>
+								<li><a href="#">יומן אישי</a></li>								
 							
 						</nav>
 						<nav class="main">
@@ -91,7 +94,7 @@
 						<!-- Actions -->
 							<section>
 								<ul class="actions stacked">
-									<li><a href="#" class="button large fit">Log In</a></li>
+									<li><a href="#" class="button large fit" onclick="signOut()" >Sign out</a></li>
 								</ul>
 							</section>
 
@@ -506,9 +509,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 						<!-- Intro -->
 							<section id="intro">
-								<a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+								<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
 								<header>
-									<h2>שם משתמש</h2>
+									<h2 id="username">שם משתמש</h2>
 									<p>רמה ||  מגדר || נקודות || סטטוס</a></p>
 								</header>
 							</section>
@@ -642,6 +645,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				function onSignIn(googleUser) {
+				// get user profile information googleUser.getBasicProfile()
+				
+				
+				//show username
+				username = googleUser.getBasicProfile().getName()
+				document.getElementById('username').innerHTML = username
+					
+				//show image					
+				image = googleUser.getBasicProfile().getImageUrl()
+				document.getElementById('logo').src = image
+				
+				}
+	
+				function signOut() {
+				gapi.auth2.getAuthInstance().signOut().then(function() {
+					console.log('user signed out')
+				})
+			}
+			</script>
 	</body>
 </html>
