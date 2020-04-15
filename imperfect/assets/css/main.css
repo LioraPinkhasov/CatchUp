@@ -2751,8 +2751,8 @@ input, select, textarea {
 		padding: 3em 3em 1em 3em ;
 		background: #ffffff;
 		border: solid 1px rgba(160, 160, 160, 0.3);
-		/*margin: 0 0 3em 0;*/
-		margin-right: 10px;
+		margin: 0 0 3em 0;
+		margin-right: 20px;
 		position: relative;
 	}
 
@@ -3349,6 +3349,7 @@ input, select, textarea {
 		opacity: 1;
 		padding: 4.5em;
 		width: 90em;
+		
 	}
 
 		body.is-menu-visible #wrapper {
