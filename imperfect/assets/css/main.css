@@ -2417,6 +2417,63 @@ input, select, textarea {
 			margin-left: 2em;
 		}
 
+/*put again*/
+/*liora put here try*/
+ul.special {
+	list-style: none;
+	padding-left: 0;
+	cursor: default;
+	position: relative;
+	margin: -2em 0 4em -2em;
+}
+
+	ul.special li {
+		-moz-transition: top .15s ease-in-out;
+		-webkit-transition: top .15s ease-in-out;
+		-ms-transition: top .15s ease-in-out;
+		transition: top .15s ease-in-out;
+		position: relative;
+		display: inline-block;
+		top: 0;
+		padding: 2em 0 0 2em;
+	}
+
+		ul.special li a {
+			display: block;
+			outline: 0;
+		}
+
+			ul.special li a:before {
+				-moz-transition: background-color .2s ease-in-out;
+				-webkit-transition: background-color .2s ease-in-out;
+				-ms-transition: background-color .2s ease-in-out;
+				transition: background-color .2s ease-in-out;
+				display: block;
+				text-align: center;
+				background: #d6dfda;
+				border-radius: 100%;
+				width: 2.25em;
+				height: 2.25em;
+				line-height: 2.175em;
+				font-size: 3em;
+				color: #fff;
+			}
+
+		ul.special li:hover {
+			top: -1em;
+		}
+
+			ul.special li:hover a:before {
+				background: #b9d2ce;
+			}
+/*bla bla bla*/
+
+
+
+
+
+
+
 /* Actions */
 
 	ul.actions {
