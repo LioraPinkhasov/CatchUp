@@ -12,7 +12,7 @@
 		<meta name="google-signin-client_id" content="535460952165-m9fj8ati9gsmi8uc2q6db9qtoqfkkuac.apps.googleusercontent.com">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+
 	</head>
 	<body class="single is-preload">
 
@@ -25,17 +25,17 @@
 						<button id="authorize_button" style="display: none;">sign-in</button>
 						<nav class="links">
 							<ul>
-								<li><a href="#">פרופיל</a></li>
-								<li><a href="#">אתגרים</a></li>
+								<li><a href="profile.html">פרופיל</a></li>
+								<li><a href="challenge.html">אתגרים</a></li>
 								<!-- <ul>
 									<li>אתגרים קבועים</li>
 									<li>אתגרים חדשים</li>
 									<li>מחולל אתגרים</li>
 								  </ul></ul>-->
-								<li><a href="#">אלופים</a></li>
-								<li><a href="#">הישגים</a></li>
+									<li><a href="leaderboards.html">אלופים</a></li>
+								<li><a href="achievements.html">הישגים</a></li>
 								<li><a href="#">יומן אישי</a></li>
-								<li><a href="#">צור אתגר</a></li>
+								<li><a href="challenge_create.html">צור אתגר</a></li>
 						</nav>
 						<nav class="main">
 							<ul>
@@ -53,54 +53,58 @@
 					</header>
 
 				<!-- Menu -->
-					<section id="menu">
+					<!--we dont really need side menu <section id="menu">-->
 
 						<!-- Search -->
-							<section>
+							<!--<section>
 								<form class="search" method="get" action="#">
-									<input type="text" name="query" placeholder="Search" />
+									<input type="text" name="query" placeholder="חיפוש" />
 								</form>
-							</section>
+							</section> -->
 
 						<!-- Links -->
-							<section>
+						<!--	<section>
 								<ul class="links">
 									<li>
 										<a href="#">
-											<h3>Lorem ipsum</h3>
-											<p>Feugiat tempus veroeros dolor</p>
+											<h3>פרופיל אישי</h3>
+											<p>כאן יש את המידע האישי שלך</p>
+										</a>
+									</li>
+									<li>
+										<a href="challenge_crate.html">
+											<h3>אתגרים</h3>
+											<p>כאן ניתן למצוא מגוון רחב של אתגרים</p>
+										</a>
+									</li>
+									<li>
+										<a href="leaderboards.html">
+											<h3>אלופים</h3>
+											<p>כאן יש את טבלת האלופים והניקוד שהם הרוויחו</p>
+										</a>										
+									</li>
+									<li>
+										<a href="achievements.html">
+											<h3>השגים</h3>
+											<p>כאן יש את טבלת השגים שקיבלתה</p>
 										</a>
 									</li>
 									<li>
 										<a href="#">
-											<h3>Dolor sit amet</h3>
-											<p>Sed vitae justo condimentum</p>
+											<h3>יומן אישי</h3>
+											<p>כאן ניתן לראות את היומן האישי שלכם המסונכרן עם גוגל</p>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<h3>Feugiat veroeros</h3>
-											<p>Phasellus sed ultricies mi congue</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Etiam sed consequat</h3>
-											<p>Porta lectus amet ultricies</p>
+										<a href="challenge_crate">
+											<h3>צור אתגר</h3>
+											<p>כאן יוצרים אתגר חדש</p>
 										</a>
 									</li>
 								</ul>
-							</section>
+							</section>-->
 
 						<!-- Actions -->
-							<section>
-								<ul class="actions stacked">
-									<li><a href="#" class="button large fit">Log In</a></li>
-								</ul>
-							</section>
-
-					</section>
-
 				<!-- Main -->
 					<div id="main">
 
@@ -108,59 +112,56 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">טבלת אלופים</a></h2>										
+										<h2><a href="#">טבלת אלופים</a></h2>
 									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-11-01">November 1, 2015</time>
-										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
+									
 								</header>
 								<span class="image featured"><img src="images/leaderboards.jpg" alt="" /></span>
-																
+
 								<table>
 									<tr style="background-color: #646464;">
-										<th style="color:white">מקום 4</th>		
-										<th style="color:white">100 נקודות</th>	
-										<th style="color:white">שם 1</th>	
-										<th style="text-align: left;"><img src="images/myAvatar_1.png" style="height: 50px; width: 50px" alt="" /></th>										
+										<th style="color:white">מקום 4</th>
+										<th style="color:white">100 נקודות</th>
+										<th style="color:white">שם 1</th>
+										<th style="text-align: left;"><img src="images/myAvatar_1.png" style="height: 50px; width: 50px" alt="" /></th>
 									</tr>
 									<tr>
-										<th>מקום 1</th>		
-										<th>500 נקודות</th>	
-										<th>שם 2</th>	
-										<th style="text-align: left;"><img src="images/myAvatar_2.png" style="height: 50px; width: 50px" alt="" /></th>										
+										<th>מקום 1</th>
+										<th>500 נקודות</th>
+										<th>שם 2</th>
+										<th style="text-align: left;"><img src="images/myAvatar_2.png" style="height: 50px; width: 50px" alt="" /></th>
 									</tr>
 									<tr>
-										<th>מקום 2</th>		
-										<th>250 נקודות</th>	
-										<th>שם 3</th>	
-										<th style="text-align: left;"><img src="images/myAvatar_3.png" style="height: 50px; width: 50px" alt="" /></th>									
+										<th>מקום 2</th>
+										<th>250 נקודות</th>
+										<th>שם 3</th>
+										<th style="text-align: left;"><img src="images/myAvatar_3.png" style="height: 50px; width: 50px" alt="" /></th>
 									</tr>
 									<tr>
-										<th>מקום 3</th>		
-										<th>200 מקודות</th>	
-										<th>שם 4</th>	
-										<th style="text-align: left;"><img src="images/myAvatar_4.png" style="height: 50px; width: 50px" alt="" /></th>										
+										<th>מקום 3</th>
+										<th>200 מקודות</th>
+										<th>שם 4</th>
+										<th style="text-align: left;"><img src="images/myAvatar_4.png" style="height: 50px; width: 50px" alt="" /></th>
 									</tr>
 									<tr style="background-color: #646464;">
-										<th style="color:white">מקום 4</th>		
-										<th style="color:white">100 נקודות</th>	
-										<th style="color:white">שם 1</th>	
-										<th style="text-align: left;"><img src="images/myAvatar_1.png" style="height: 50px; width: 50px" alt="" /></th>											
+										<th style="color:white">מקום 4</th>
+										<th style="color:white">100 נקודות</th>
+										<th style="color:white">שם 1</th>
+										<th style="text-align: left;"><img src="images/myAvatar_1.png" style="height: 50px; width: 50px" alt="" /></th>
 									</tr>
 									<tr>
-										<th>מקום 5</th>		
-										<th>100 נקודות</th>	
-										<th>שם 5</th>	
-										<th style="text-align: left;"><img src="images/myAvatar_5.png" style="height: 50px; width: 50px" alt="" /></th>											
+										<th>מקום 5</th>
+										<th>100 נקודות</th>
+										<th>שם 5</th>
+										<th style="text-align: left;"><img src="images/myAvatar_5.png" style="height: 50px; width: 50px" alt="" /></th>
 									</tr>
 									<tr>
-										<th>מקום 6</th>		
-										<th>90 נקודות</th>	
-										<th>שם 6</th>	
-										<th style="text-align: left;"><img src="images/myAvatar_6.png" style="height: 50px; width: 50px" alt="" /></th>										
+										<th>מקום 6</th>
+										<th>90 נקודות</th>
+										<th>שם 6</th>
+										<th style="text-align: left;"><img src="images/myAvatar_6.png" style="height: 50px; width: 50px" alt="" /></th>
 									</tr>
-									
+
 								</table>
 							</article>
 
