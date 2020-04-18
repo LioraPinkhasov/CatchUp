@@ -1,10 +1,13 @@
 @import url(fontawesome-all.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js");
+
+
+
 /*
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
 */
 
 html, body, div, span, applet, object,
@@ -81,6 +84,279 @@ input, select, textarea {
 	appearance: none;
 	
 }
+/*try todo list*/
+ul.list-group list-group-flush
+{
+
+	margin-top: 10000px;
+}
+
+ul.list-group-flush
+{
+
+	width: 800px;
+	flex-direction: row-reverse;
+}
+
+button.btn.btn-primary
+{
+	background-color: #51b4d3;
+	color:azure;
+	
+	
+}
+
+button.border-0.btn-transition.btn.btn-outline-success
+{
+	float:left;
+	left:0;
+	
+}
+
+button.border-0.btn-transition.btn.btn-outline-danger
+{
+	float:left;
+	left:0;
+	
+}
+
+div.widget-heading
+{
+	padding-left: 320px;
+}
+
+@media (max-width:991.98px)
+{
+	div.widget-heading
+	{
+		
+		padding-left: 220px;
+		
+	}
+
+	div.widget-content-wrapper
+	{
+		padding-left: 220px;
+	}
+}
+
+@media (max-width:767.98px)
+{
+	div.widget-heading
+	{
+		
+		padding-left: 220px;
+		flex-shrink: initial;
+		
+	}
+
+	div.widget-content-wrapper
+	{
+		padding-left: 220px;
+		flex-shrink: initial;
+	}
+
+	
+}
+
+/*close try to dolist*/
+
+
+/*try to add skill bar
+body {
+	background-color: #f9f9fa
+}
+
+.flex {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+	.padding {
+		padding: 1.5rem
+	}
+}
+
+@media (max-width:767.98px) {
+	.padding {
+		padding: 1rem
+	}
+}
+
+.padding {
+	padding: 5rem
+}
+
+.container {
+	margin-top: 100px
+}
+
+.progress.progress-md {
+	height: 8px
+}
+
+.template-demo .progress {
+	margin-top: 1.5rem
+}
+
+.progress {
+	border-radius: 3px;
+	height: 8px
+}
+
+done to add skill bar*/
+
+
+
+
+    
+
+
+
+
+.card-header {
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0.625rem;
+    height: 3.5rem;
+    background-color: #fff
+}
+
+.widget-subheading {
+    color: #858a8e;
+    font-size: 10px
+}
+
+.card-header.card-header-tab .card-header-title {
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+
+.card-header .header-icon {
+    font-size: 1.65rem;
+    margin-right: 0.625rem
+}
+
+.card-header.card-header-tab .card-header-title {
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+
+.btn-actions-pane-right {
+    margin-left: auto;
+    white-space: nowrap
+}
+
+.text-capitalize {
+    text-transform: capitalize !important
+}
+
+
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+
+
+.todo-indicator {
+    position: absolute;
+    width: 4px;
+    height: 60%;
+    border-radius: 0.3rem;
+    left: 0.625rem;
+    top: 20%;
+    opacity: .6;
+    transition: opacity .2s
+}
+
+.bg-warning {
+    background-color: #f7b924 !important
+}
+
+.widget-content {
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center
+}
+
+.widget-content .widget-content-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center
+}
+
+.widget-content .widget-content-right.widget-content-actions {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s
+}
+
+.widget-content .widget-content-right {
+    margin-left: auto
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer
+}
+
+.btn {
+    position: relative;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s
+}
+
+.btn-outline-success {
+    color: #3ac47d;
+    border-color: #3ac47d
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #3ac47d;
+    border-color: #3ac47d
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #3ac47d;
+    border-color: #3ac47d
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3f6ad8;
+    border-color: #3f6ad8
+}
+
+.btn {
+    position: relative;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+    outline: none !important
+}
+
+.card-footer {
+    background-color: #fff
+}
+
+.list-group list-group-flush ul
+{
+	width: 1000px;
+}
+
+/*end of try to do list*/
 
 /* Basic */
 
@@ -2418,6 +2694,10 @@ input, select, textarea {
 		}
 
 /*put again*/
+
+
+
+
 /*liora put here try*/
 ul.special {
 	list-style: none;
