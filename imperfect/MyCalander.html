@@ -1,5 +1,11 @@
 <!DOCTYPE HTML>
 <!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!DOCTYPE HTML>
+<!--
 	CatchUp by BaverlyHillsDragons
 	Aviv Vexler || Amiel Liberman || Bar Goldstain || Liora Pinkhasov || Slomi Winberger
 	HackTown2020
@@ -9,7 +15,10 @@
 		<title>CatchUp</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="google-signin-client_id" content="535460952165-m9fj8ati9gsmi8uc2q6db9qtoqfkkuac.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 	</head>
 	<body class="is-preload">
 
@@ -23,16 +32,11 @@
 						<nav class="links">
 							<ul>
 								<li><a href="profile.html">פרופיל</a></li>
-								<li><a href="challenge.html">אתגרים</a><!--
-								 <ul>
-									<li>אתגרים קבועים</li>
-									<li>אתגרים חדשים</li>
-									<li>מחולל אתגרים</li>
-								  </ul>--></li>
+								<li><a href="challenge.html">אתגרים</a></li>
 								<li><a href="leaderboards.html">אלופים</a></li>
 								<li><a href="achievements.html">הישגים</a></li>
 								<li><a href="MyCalander.html">יומן אישי</a></li>
-								<li><a href="CreatChallenge.html">צור אתגר</a></li>
+								<li><a href="challenge_create.html">צור אתגר</a></li>
 						</nav>
 						<nav class="main">
 							<ul>
@@ -104,112 +108,51 @@
 						<!-- Actions -->
 
 				<!-- Main -->
-					<div id="main">
-                        <article class="post">
-							<section id ="try">
-                                
-
-                                <form action="index.html" >
-                                    <input id="go_main" type="submit" value="לעמוד הראשי">
-                                    </form>
-        
-        
-                                  <form id="survey-form">
-                                    <label id ="name-label">שם האתגר:
-                                    <input id="name" type="text" placeholder="הוסף שם לאתגר" >
-                                    </label>
-                                    <br>
-                                    <label id="link-label"> קישור לאתגר (זום/פייסבוק/אינסטגרם וכ'ו):
-                                    <input id="linkloc" type="url" placeholder="Enter Your url" >
-                                    </label>
-                                    <br>
-                                <!--     <label id="number-label"> Your age:
-                                    <input id="number" type="number" placeholder="Enter Your age" min="18" max="60" required>
-                                    </label> -->
-                                    <p>למי מיועד :</p>
-                                    <select id="dropdown">
-                                      <option value="default">ילדי גן</option>
-                                      <option value="default">כיתות יסודי</option>
-                                      <option value="default">נוער</option>
-                                      <option value="default">מבוגרים</option>
-                                      <option value="default">כללי</option>
-                                    </select>
-        
-                                    <p>או בריבועים:</p>
-                                <input type="checkbox" name="box" value="1">כללי</input>
-                                <br>
-                                <input type="checkbox" name="box" value="1">ילדי גן</input>
-                                <br>
-                                <input type="checkbox" name="box" value="1">כיתות יסודי</input>
-                                <br>
-                                <input type="checkbox" name="box" value="1">נוער</input>
-                                <br>
-                                <input type="checkbox" name="box" value="1">מבוגרים</input>
-
-                                    <p>רמת קושי</p>
-                                
-                                  <input type="radio" name="rad" value="1">1</input>
-                                  <br>
-                                  <input type="radio" name="rad" value="2">2</input>
-                                  <br>
-                                 <input type="radio" name="rad" value="3">3</input>
-                                <br>
-                                 <label for="birthdaytime">זמן התחלה</label>
-                                  <input type="datetime-local" id="starttime" name="starttime">
-                                <br>
-                                <label for="birthdaytime">זמן סיום</label>
-                                  <input type="datetime-local" id="endtime" name="endtime">
-                                <br>
-                                
-                                <!-- <p>some cheakbok:</p>
-                                <input type="checkbox" name="box" value="1">here</input>
-                                <br>
-                                <input type="checkbox" name="box" value="1">here</input>
-                                <br>
-                                <input type="checkbox" name="box" value="1">here</input> -->
-
-                                <p>תיאור האתגר</p>
-                                <textarea id="comment" rows="4" cols="40">מלא פרטים על האתגר כאן</textarea>
-                                <br>
-                                <input id="submit" type="submit" value="Submit">
-                                  </form>
-                                </section>
-                                </article>
+				<div id="main">
 
 						
-                        
 
+						
 
+					<!--try-->
+					<article class="post">
+					<section id ="try">
+						<h2>שלום לך!</h2>
+						<p>זהו העמוד האישי שלך בו תתלהב מעצמך</p>
+						
+					</section>
+				</article>
 
+					
 
+					
 
-					</div>
+				</div>
 
-				<!-- Sidebar -->
-					<section id="sidebar">
+			<!-- Sidebar -->
+				<section id="sidebar">
 
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
-								<header>
-									<h2 id="username">שם משתמש</h2>
-									<p>רמה ||  מגדר || נקודות || סטטוס</a></p>
-								</header>
-							</section>
+					<!-- Intro -->
+						<section id="intro">
+							<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
+							<header>
+								<h2 id="username">שם משתמש</h2>
+								<!--רמה ||  מגדר || נקודות || סטטוס-->
+								<p>מתחיל ||  זכר || 10 נקודות || מחובר</a></p>
+							</header>
+						</section>
 
+					
 
-
-
-						<!-- About -->
-							<section class="blurb">
-								<h2>עלינו</h2>
-								<p>באתגר הזה אתם יכולים לקחת ולעשות בלה בלה בלה</p>
-								<ul class="actions">
-									<li><a href="#" class="button">גלה עוד</a></li>
-								</ul>
-							</section>
-
-
+					
+					<!-- About -->
+						<section class="blurb">
+							<h2>עלינו</h2>
+							<p>באתגר הזה אתם יכולים לקחת ולעשות בלה בלה בלה</p>
+							<ul class="actions">
+								<li><a href="#" class="button">גלה עוד</a></li>
+							</ul>
+						</section>
 
 
 						<!--dont need it 
@@ -224,11 +167,7 @@
 								
 							</section>-->
 
-
-
-                    </section>
-
-
+					</section>
 
 			</div>
 
@@ -378,3 +317,5 @@
 
 	</body>
 </html>
+
+
