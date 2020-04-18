@@ -19,12 +19,11 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="index.html">CatchUp</a></h1>
-						<button id="authorize_button" style="display: none;">sign-in</button>												
+						<button id="authorize_button" style="display: none;">sign-in</button>
 						<nav class="links">
 							<ul>
 								<li><a href="profile.html">פרופיל</a></li>
-								<li><a href="challenge.html">אתגרים</a>
-									<!--
+								<li><a href="challenge.html">אתגרים</a><!--
 								 <ul>
 									<li>אתגרים קבועים</li>
 									<li>אתגרים חדשים</li>
@@ -33,10 +32,16 @@
 								<li><a href="leaderboards.html">אלופים</a></li>
 								<li><a href="achievements.html">הישגים</a></li>
 								<li><a href="MyCalander.html">יומן אישי</a></li>
-								<li><a href="CreatChallenge.html">צור אתגר</a></li>
+								<li><a href="challenge_crate.html">צור אתגר</a></li>
 						</nav>
 						<nav class="main">
-							<ul>								
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="חיפוש" />
+									</form>
+								</li>
 								<li class="menu">
 									<a class="fa-bars" href="#menu">Menu</a>
 								</li>
@@ -44,94 +49,120 @@
 						</nav>
 					</header>
 
-
 				<!-- Menu -->
-					<section id="menu">
-						<section>
-							<ul class="actions stacked">
-								<li><a href="#" class="button large fit" id="signout_button" style="display: none;" >Sign out</a></li>
-							</ul>
-						</section>
-					</section>
+					<!--we dont really need side menu <section id="menu">-->
+
+						<!-- Search -->
+							<!--<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="חיפוש" />
+								</form>
+							</section> -->
+
+						<!-- Links -->
+						<!--	<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>פרופיל אישי</h3>
+											<p>כאן יש את המידע האישי שלך</p>
+										</a>
+									</li>
+									<li>
+										<a href="challenge_crate.html">
+											<h3>אתגרים</h3>
+											<p>כאן ניתן למצוא מגוון רחב של אתגרים</p>
+										</a>
+									</li>
+									<li>
+										<a href="leaderboards.html">
+											<h3>אלופים</h3>
+											<p>כאן יש את טבלת האלופים והניקוד שהם הרוויחו</p>
+										</a>										
+									</li>
+									<li>
+										<a href="achievements.html">
+											<h3>השגים</h3>
+											<p>כאן יש את טבלת השגים שקיבלתה</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>יומן אישי</h3>
+											<p>כאן ניתן לראות את היומן האישי שלכם המסונכרן עם גוגל</p>
+										</a>
+									</li>
+									<li>
+										<a href="challenge_crate">
+											<h3>צור אתגר</h3>
+											<p>כאן יוצרים אתגר חדש</p>
+										</a>
+									</li>
+								</ul>
+							</section>-->
+
+						<!-- Actions -->
 
 				<!-- Main -->
 					<div id="main">
-						
 
-						<!-- Post -->
-						<article class="post">
-							
-							
-								<div class="title">
-									<h2>אתגרי קינוחים</h2>
-									<p>כאן ניתן למצוא מגוון עשיר ומגוון של אתגרים הנוגעים לנושא הכנת הקינוחים, 
-										פשוט לבוא וללקק את האמצבעות </p>
-								</div>
-							
-						</article>
 
-						<!-- Post -->
-						<article class="post">
-							
-							<header>
-								<div class="title">
-									<h2><a href="single.html">אתגר כדורי השוקולד</a></h2>
-									<p>קינוחים || 15 || פעיל || משתתף </p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-10-25">תאריך העלאה (שיהיה אוטומטי)</time>
-									<!--<a href="#" class="author"><span class="name">  שם המעלה (שיהיה אוטומטי)</span><img src="images/avatar.jpg" alt="" /></a>
-									--></div>
-							</header>
-							<a href="single.html" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<p>אוהבים כדורי שוקולד? אז זה האתגר בשבילכם, הכינו את כדורי השוקולד הטעימים ביותר
-								שאתם יכולים, הוסיפו בתגובה שלכם מתכון ותמונה\סרטון והתגובה שתקבל הכי הרבה לייקים
-								תנצח ותזכה את מפרסמה ב-100 נקודות!
-							</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="single.html" class="button large">להשתתפות הקש כאן</a></li>
-								</ul>
-								<ul class="stats">
-									<li><a href="#">קטגוריה כללית</a></li>
-									<li><a href="#" class="icon solid fa-heart">        לייקים       </a></li>
-									<li><a href="#" class="icon solid fa-comment">  תגובות</a></li>
-								</ul>
-							</footer>
-						</article>
 
-						<!-- Post -->
+
+
 						<article class="post">
-							
-							<header>
-								<div class="title">
-									<h2><a href="single.html">אתגר מוס הפלא</a></h2>
-									<p> קינוחים || 2 || פעיל || משתתף </p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-10-25">תאריך העלאה (שיהיה אוטומטי)</time>
-									<!--<a href="#" class="author"><span class="name">  שם המעלה (שיהיה אוטומטי)</span><img src="images/avatar.jpg" alt="" /></a>
-									--></div>
-							</header>
-							<a href="single.html" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<p>כולנו כבר טעמנו מוס שוקולד ונגמלנו ממוס הוניל, אז הגיע העת להכין מוס חדש שישובב את הנפש
-								באתגר הזה כל שעליכם לעשות הוא להכין מוס מקורי שיסחוף אחריו את כולם, הוסיפו בתגובה תמונה
-								ומתכון עבור המוס שהכנתם והתגובה שתקבל הכי הרבה לייקים תזכה את מפרסמה ב-200 נקודות! 
-							</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="single.html" class="button large">להשתתפות הקש כאן</a></li>
+							<section id ="try">
+	
+								<h2>הלוז היומי</h2>
+								<p>המערכת שלנו זיהתה ש.....</p>
+	
+								<h2>מחולל האתגרים</h2>
+								<ul class="special">
+								<li><a href="challenge_create.html" class="icon solid fa-magic"><span class="label">Magnifier</span></a></li>
 								</ul>
-								<ul class="stats">
-									<li><a href="#">קטגוריה כללית</a></li>
-									<li><a href="#" class="icon solid fa-heart">        לייקים       </a></li>
-									<li><a href="#" class="icon solid fa-comment">  תגובות</a></li>
+
+								<h2>צור אתגר</h2>
+								<ul class="special">
+								<li><a href="challenge_create.html" class="icon solid fa-hat-wizard"><span class="label">Magnifier</span></a></li>
 								</ul>
-							</footer>
-							<ul class="actions">
-							<li><a href="DesertChallenge.html" class="button large">הצג עוד </a></li>
-						</ul>
-						</article>
+
+
+								<h2>אתגרים לפי קטגוריות</h2>
+								<p>ברוכים הבאים למתנס האזורי, כאן אתם יכולים לגשת לחוגים שאליהם אתם כבר רשומים ואף להכיר חוגים ואתגרים חדשים, למען נוכחיותכם סידרנו את האתגרים בתוך קטגוריות. על כן הקישו על אחד מהכפתורים על מנת להגיע לעמוד המתאים.
+								</p>
+								<ul class="special">
+									<li><a href="DesertChallenge.html" class="icon solid fa-birthday-cake"><span class="label">Desert</span></a></li>
+									<li><a href="CookingChallenge.html" class="icon solid fa-concierge-bell"><span class="label">Cooking</span></a></li>
+									<li><a href="#" class="icon solid fa-dumbbell"><span class="label">Flask</span></a></li>
+									<li><a href="#" class="icon solid fa-dog"><span class="label">Cog?</span></a></li>
+									<li><a href="#" class="icon solid fa-dove"><span class="label">Cog?</span></a></li>
+	
+									<!--yo-->
+									<li><a href="#" class="icon solid fa-paw"><span class="label">Magnifier</span></a></li>
+									<li><a href="#" class="icon solid fa-signal"><span class="label">Tablet</span></a></li>
+									<li><a href="#" class="icon solid fa-graduation-cap"><span class="label">Flask</span></a></li>
+									<li><a href="#" class="icon solid fa-laptop"><span class="label">Cog?</span></a></li>
+									<li><a href="#" class="icon solid fa-dice-six"><span class="label">Cog?</span></a></li>
+	
+									
+								</ul>
+
+								<p>הצג עוד</p>  
+								
+								<ul class="specialmore">
+									<li><a href="#" class="icon solid fa-book"><span class="label">Magnifier</span></a></li>
+									<li><a href="#" class="icon solid fa-child"><span class="label">Tablet</span></a></li>
+									<li><a href="#" class="icon solid fa-broom"><span class="label">Flask</span></a></li>
+									<li><a href="#" class="icon solid fa-american-sign-language-interpreting"><span class="label">Cog?</span></a></li>
+									<li><a href="#" class="icon solid fa-paint-brush"><span class="label">Cog?</span></a></li>
+
+								</ul>
+								<h2>אתגרים בהרצה</h2>
+								<p>כאן אתה יכול לראות אתגרים שלך כשהם עוד בשלב הביצוע ומחכים להצבעות</p>
+
+                            
+                        </section>
+                    </article>
 
 
 
@@ -166,7 +197,17 @@
 
 
 
-						
+						<!--dont need it 
+							<section id="footer">
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+								
+							</section>-->
 
 
 
