@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+    <cript src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script>
 	</head>
 
 	<body>
@@ -21,21 +21,21 @@
 			var oReq = new XMLHttpRequest();
 			oReq.open("GET", url, true);
 			oReq.responseType = "arraybuffer";
-	
+
 			oReq.onload = function(e) {
 				var arraybuffer = oReq.response;
-	
+
 				/* convert data to binary string */
 				var data = new Uint8Array(arraybuffer);
 				var arr = new Array();
 				for (var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
 				var bstr = arr.join("");
-	
+
 				/* Call XLSX */
 				var workbook = XLSX.read(bstr, {
 					type: "binary"
 				});
-	
+
 				/* DO SOMETHING WITH workbook HERE */
 				var first_sheet_name = RndChallenge.SheetNames[0];
 				/* Get worksheet */
@@ -44,7 +44,7 @@
 					raw: true
 				}));
 			}
-	
+
 			oReq.send();
 		</script>
 	</body>
@@ -96,7 +96,7 @@
 								<form class="search" method="get" action="#">
 									<input type="text" name="query" placeholder="חיפוש" />
 								</form>
-							</section> 
+							</section>
 
 						<!-- Links -->
 							<section>
@@ -117,7 +117,7 @@
 										<a href="leaderboards.html">
 											<h3>אלופים</h3>
 											<p>כאן יש את טבלת האלופים והניקוד שהם הרוויחו</p>
-										</a>										
+										</a>
 									</li>
 									<li>
 										<a href="achievements.html">
@@ -131,7 +131,7 @@
 											<p>כאן ניתן לראות את היומן האישי שלכם המסונכרן עם גוגל</p>
 										</a>
 									</li>
-									
+
 								</ul>
 							</section>
 
@@ -146,22 +146,24 @@
 				<!-- Main -->
 				<div id="main">
 
-						
 
-						
+
+
 
 					<!--try-->
 					<article class="post">
 					<section id ="try">
 						<h2>שלום לך!</h2>
-						<p>זהו העמוד האישי שלך בו תתלהב מעצמך</p>
-						
+						<p>פה תוכל לקבל אתגר רנדומלי</p>
+						<input id="random" type="submit" value="צור אתגר רנדומלי">
+															<div id="ran">
+															</div>
 					</section>
 				</article>
 
-					
 
-					
+
+
 
 				</div>
 
@@ -196,7 +198,7 @@
 
 
 
-						<!--dont need it 
+						<!--dont need it
 							<section id="footer">
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -205,7 +207,7 @@
 									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
 									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
-								
+
 							</section>-->
 
 
