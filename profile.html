@@ -23,16 +23,11 @@
 						<nav class="links">
 							<ul>
 								<li><a href="profile.html">פרופיל</a></li>
-								<li><a href="challange.html">אתגרים</a><!--
-								 <ul>
-									<li>אתגרים קבועים</li>
-									<li>אתגרים חדשים</li>
-									<li>מחולל אתגרים</li>
-								  </ul>--></li>
+								<li><a href="challenge.html">אתגרים</a></li>
 								<li><a href="leaderboards.html">אלופים</a></li>
 								<li><a href="achievements.html">הישגים</a></li>
-								<li><a href="#">יומן אישי</a></li>
-								<li><a href="challenge_crate.html">צור אתגר</a></li>
+								<li><a href="MyCalander.html">יומן אישי</a></li>
+								<li><a href="CreatChallenge.html">צור אתגר</a></li>
 						</nav>
 						<nav class="main">
 							<ul>
@@ -50,26 +45,26 @@
 					</header>
 
 				<!-- Menu -->
-					<!--we dont really need side menu <section id="menu">-->
+					 <section id="menu">
 
 						<!-- Search -->
-							<!--<section>
+							<section>
 								<form class="search" method="get" action="#">
 									<input type="text" name="query" placeholder="חיפוש" />
 								</form>
-							</section> -->
+							</section> 
 
 						<!-- Links -->
-						<!--	<section>
+							<section>
 								<ul class="links">
 									<li>
-										<a href="#">
+										<a href="profile.html">
 											<h3>פרופיל אישי</h3>
 											<p>כאן יש את המידע האישי שלך</p>
 										</a>
 									</li>
 									<li>
-										<a href="challenge_crate.html">
+										<a href="challenge.html">
 											<h3>אתגרים</h3>
 											<p>כאן ניתן למצוא מגוון רחב של אתגרים</p>
 										</a>
@@ -87,91 +82,244 @@
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="MyCalander.html">
 											<h3>יומן אישי</h3>
 											<p>כאן ניתן לראות את היומן האישי שלכם המסונכרן עם גוגל</p>
 										</a>
 									</li>
-									<li>
-										<a href="challenge_crate">
-											<h3>צור אתגר</h3>
-											<p>כאן יוצרים אתגר חדש</p>
-										</a>
-									</li>
+									
 								</ul>
-							</section>-->
+							</section>
 
 						<!-- Actions -->
-
+						<section>
+							<ul class="actions stacked">
+								<li><a href="#" class="button large fit" id="signout_button" style="display: none;" >Sign out</a></li>
+							</ul>
+						</section>
+					</section>
 				<!-- Main -->
-					<div id="main">
+				<div id="main">
 
 						
 
 						
 
-                        <!--try-->
-                        <article class="post">
-                        <section id ="try">
-                            <h2>שלום לך!</h2>
-                            <p>זהו העמוד האישי שלך בו תתלהב מעצמך</p>
-                            
-                        </section>
-                    </article>
-
+					<!--try-->
+					<article class="post">
+					<section id ="try">
+						<h2>  שלום לך!</h2>
+						<p>זהו העמוד האישי שלך בו תתלהב מעצמך</p>
 						
+					</section>		
+				</article>
 
-						
+				<article class="post">
 
+				<!--to do list-->
+				<div class="row d-flex justify-content-center container">
+					<div class="col-md-8">
+						<div class="card-hover-shadow-2x mb-3 card">
+							<div class="card-header-tab card-header">
+								<div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp;הפעילויות היומיות</div>
+							</div>
+							<div class="scroll-area-sm">
+								<perfect-scrollbar class="ps-show-limits">
+									<div style="position: static;" class="ps ps--active-y">
+										<div class="ps-content">
+											<ul class=" list-group list-group-flush">
+												<li class="list-group-item">
+													<div class="todo-indicator bg-warning"></div>
+													<div class="widget-content p-0">
+														<div class="widget-content-wrapper">
+															<div class="widget-content-left mr-2">
+																<div class="custom-checkbox custom-control"> <input class="custom-control-input" id="exampleCustomCheckbox12" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox12">&nbsp;</label> </div>
+															</div>
+															<div class="widget-content-left">
+																<div class="widget-heading">להכין כדורי שוקולד <div class="badge badge-danger ml-2">בביצוע</div>
+																</div>
+																<div class="widget-subheading"><i>על ידי</i></div>
+															</div>
+															<div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+														</div>
+													</div>
+												</li>
+												<li class="list-group-item">
+													<div class="todo-indicator bg-focus"></div>
+													<div class="widget-content p-0">
+														<div class="widget-content-wrapper">
+															<div class="widget-content-left mr-2">
+																<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox1" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox1">&nbsp;</label></div>
+															</div>
+															<div class="widget-content-left">
+																<div class="widget-heading">לקרוא חמש עמודים</div>
+																<div class="widget-subheading">
+																	<div>על ידי <div class="badge badge-pill badge-info ml-2">משימה חדשה</div>
+																	</div>
+																</div>
+															</div>
+															<div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+														</div>
+													</div>
+												</li>
+												<li class="list-group-item">
+													<div class="todo-indicator bg-primary"></div>
+													<div class="widget-content p-0">
+														<div class="widget-content-wrapper">
+															<div class="widget-content-left mr-2">
+																<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox4" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox4">&nbsp;</label></div>
+															</div>
+															<div class="widget-content-left flex2">
+																<div class="widget-heading">לחייך ולצחווק המון   </div>
+																<div class="widget-subheading">על ידי</div>
+															</div>
+															<div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+														</div>
+													</div>
+												</li>
+												<li class="list-group-item">
+													<div class="todo-indicator bg-info"></div>
+													<div class="widget-content p-0">
+														<div class="widget-content-wrapper">
+															<div class="widget-content-left mr-2">
+																<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox2" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox2">&nbsp;</label></div>
+															</div>
+															<div class="widget-content-left">
+																<div class="widget-heading">                  להכיין שיעורי בית</div>
+																<div class="widget-subheading">על ידי</div>
+															</div>
+															<div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+														</div>
+													</div>
+												</li>
+												<li class="list-group-item">
+													<div class="todo-indicator bg-success"></div>
+													<div class="widget-content p-0">
+														<div class="widget-content-wrapper">
+															<div class="widget-content-left mr-2">
+																<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox3" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox3">&nbsp;</label></div>
+															</div>
+															<div class="widget-content-left flex2">
+																<div class="widget-heading">לעשות ריצת מאה </div>
+																<div class="widget-subheading">על ידי</div>
+															</div>
+															<div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+														</div>
+													</div>
+												</li>
+												<li class="list-group-item">
+													<div class="todo-indicator bg-success"></div>
+													<div class="widget-content p-0">
+														<div class="widget-content-wrapper">
+															<div class="widget-content-left mr-2">
+																<div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox10" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox10">&nbsp;</label></div>
+															</div>
+															<div class="widget-content-left flex2">
+																<div class="widget-heading">לראות פרק של ג'קי </div>
+																<div class="widget-subheading">על ידי</div>
+															</div>
+															<div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</perfect-scrollbar>
+							</div>
+							<div class="d-block text-right card-footer"><button class="mr-2 btn btn-link btn-sm">ביטול</button><button class="btn btn-primary">הוספת אתגר</button></div>
+						</div>
 					</div>
+				</div>
+				<!--to do list end-->
+			</article>	
+				
+			<!--try to skill bar
+			<article calss=post>
+				<div class="page-content page-container" id="page-content">
+					<div class="padding">
+						<div class="row container d-flex justify-content-center">
+							<div class="col-md-6 grid-margin stretch-card">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="card-title">Animated Striped progressbar</h4>
+										<p class="card-description">Animated Striped progressbar example</p>
+										<div class="template-demo">
+											<div class="progress progress-md">
+												<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<div class="progress progress-md">
+												<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<div class="progress progress-md">
+												<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<div class="progress progress-md">
+												<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+											<div class="progress progress-md">
+												<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
 
-				<!-- Sidebar -->
-					<section id="sidebar">
 
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
-								<header>
-									<h2 id="username">שם משתמש</h2>
-									<p>רמה ||  מגדר || נקודות || סטטוס</a></p>
-								</header>
-							</section>
+			</article>	its dosent work so..-->
+
+					
+
+					
+
+				</div>
+
+			<!-- Sidebar -->
+				<section id="sidebar">
+
+					<!-- Intro -->
+						<section id="intro">
+							<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
+							<header>
+								<h2 id="username">שם משתמש</h2>
+								<!--רמה ||  מגדר || נקודות || סטטוס-->
+								<p>מתחיל ||  זכר || 10 נקודות || מחובר</a></p>
+							</header>
+
+							
+						</section>
 
 						
 
-						
-						<!-- About -->
-							<section class="blurb">
-								<h2>עלינו</h2>
-								<p>באתגר הזה אתם יכולים לקחת ולעשות בלה בלה בלה</p>
-								<ul class="actions">
-									<li><a href="#" class="button">גלה עוד</a></li>
-								</ul>
-							</section>
+					
+
+					
+					<!-- About -->
+						<section class="blurb">
+							<h2>עלינו</h2>
+							<p>באתגר הזה אתם יכולים לקחת ולעשות בלה בלה בלה</p>
+							<ul class="actions">
+								<li><a href="#" class="button">גלה עוד</a></li>
+							</ul>
+						</section>
 
 
-                            
-
-						<!-- Footer -->
+						<!--dont need it 
 							<section id="footer">
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-                                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                                    
-                                    
-                                    
+									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
-								<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
-							</section>
+								
+							</section>-->
 
-
-                            
-                    </section>
-                    
-
+					</section>
 
 			</div>
 
