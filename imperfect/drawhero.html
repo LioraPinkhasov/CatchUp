@@ -1,11 +1,5 @@
 <!DOCTYPE HTML>
 <!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<!DOCTYPE HTML>
-<!--
 	CatchUp by BaverlyHillsDragons
 	Aviv Vexler || Amiel Liberman || Bar Goldstain || Liora Pinkhasov || Slomi Winberger
 	HackTown2020
@@ -15,10 +9,7 @@
 		<title>CatchUp</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="google-signin-client_id" content="535460952165-m9fj8ati9gsmi8uc2q6db9qtoqfkkuac.apps.googleusercontent.com">
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
 	</head>
 	<body class="is-preload">
 
@@ -32,7 +23,12 @@
 						<nav class="links">
 							<ul>
 								<li><a href="profile.html">פרופיל</a></li>
-								<li><a href="challenge.html">אתגרים</a></li>
+								<li><a href="challenge.html">אתגרים</a><!--
+								 <ul>
+									<li>אתגרים קבועים</li>
+									<li>אתגרים חדשים</li>
+									<li>מחולל אתגרים</li>
+								  </ul>--></li>
 								<li><a href="leaderboards.html">אלופים</a></li>
 								<li><a href="achievements.html">הישגים</a></li>
 								<li><a href="MyCalander.html">יומן אישי</a></li>
@@ -107,72 +103,84 @@
 							</ul>
 						</section>
 					</section>
-
 				<!-- Main -->
-				<div id="main">
-
+					<div id="main">
 						
 
 						
 
-					<!--try-->
-					<article class="post">
-					<section id ="try">
-						<h2>שלום לך!</h2>
-						<p>זהו העמוד האישי שלך בו תתלהב מעצמך</p>
-						
-					</section>
-				</article>
-
-					
-
-					
-
-				</div>
-
-			<!-- Sidebar -->
-				<section id="sidebar">
-
-					<!-- Intro -->
-						<section id="intro">
-							<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
+						<!-- Post -->
+						<article class="post">
+							
 							<header>
-								<h2 id="username">שם משתמש</h2>
-								<!--רמה ||  מגדר || נקודות || סטטוס-->
-								<p>מתחיל ||  זכר || 10 נקודות || מחובר</a></p>
+								<div class="title">
+									<h2><a href="drawhero.html">אתגר ציירו את גיבור דיסני שלכם</a></h2>
+									<p>ילדים || 31 || פעיל || משתתף </p>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-10-25">תאריך העלאה (שיהיה אוטומטי)</time>
+									<!--<a href="#" class="author"><span class="name">  שם המעלה (שיהיה אוטומטי)</span><img src="images/avatar.jpg" alt="" /></a>
+									--></div>
 							</header>
-						</section>
-
-					
-
-					
-					<!-- About -->
-						<section class="blurb">
-							<h2>עלינו</h2>
-							<p>האתר הזה מיועד על מנת לאפשר לכולם לקחת חלק ברשת
-								אתגרים מגוונת.
-
-								תודה ל-freepik על התמונות.
-							</p>
-							<ul class="actions">
-								<li><a href="#" class="button">גלה עוד</a></li>
-							</ul>
-						</section>
-
-
-						<!--dont need it 
-							<section id="footer">
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<a href="drawhero.html" class="image featured"><img src="images/hero.jpg" alt="" /></a>
+							<p>תנו לילדים קצת לשחות במרחבי הדימיון והקסם ואפשרו להם לצייר גיבור
+                                דיסני חדש - דנדש משלהם, כל שעליכם לעשות בסיום האתגר זה לצלם תמונה
+                                של מה שהם ציירו ולפרסם כאן בתגובה,
+                                התגובה שתקבל את מירב הלייקים תזכה את יוצרה ב-300 נקודות!
+                            </p>
+							<footer>
+								<ul class="actions">
+									<li><a href="drawhero.html" class="button large">להשתתפות הקש כאן</a></li>
 								</ul>
-								
-							</section>-->
+								<ul class="stats">
+									<li><a href="KidsChallenge.html">קטגוריה ילדים</a></li>
+									<li><a href="#" class="icon solid fa-heart">        לייקים       </a></li>
+									<li><a href="#" class="icon solid fa-comment">  תגובות</a></li>
+								</ul>
+							</footer>
+						</article>
 
-					</section>
+						
+
+
+
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
+								<header>
+									<h2 id="username">שם משתמש</h2>
+									<p>רמה ||  מגדר || נקודות || סטטוס</a></p>
+								</header>
+							</section>
+
+
+
+
+						<!-- About -->
+							<section class="blurb">
+								<h2>עלינו</h2>
+								<p>באתגר הזה אתם יכולים לקחת ולעשות בלה בלה בלה</p>
+								<ul class="actions">
+									<li><a href="#" class="button">גלה עוד</a></li>
+								</ul>
+							</section>
+
+
+
+
+						
+
+
+
+                    </section>
+
+
 
 			</div>
 
@@ -322,5 +330,3 @@
 
 	</body>
 </html>
-
-
