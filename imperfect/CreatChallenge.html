@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <!--
 	CatchUp by BaverlyHillsDragons
-	Aviv Vexler || Amiel Liberman || Bar Goldstain || Liora Pinkhasov || Slomi Winberger
+	Aviv Vexler || Amiel Liberman || Bar Goldstain || Liora Pinkhasov || Shlomi Weinberger
 	HackTown2020
 -->
 <html>
@@ -136,7 +136,7 @@
                                       <option value="default">כללי</option>
                                     </select>
         
-                                    <p>או בריבועים:</p>
+                                    <p>או בבחירה מרובה:</p>
                                 <input type="checkbox" name="box" value="1">כללי</input>
                                 <br>
                                 <input type="checkbox" name="box" value="1">ילדי גן</input>
@@ -149,11 +149,11 @@
 
                                     <p>רמת קושי</p>
                                 
-                                  <input type="radio" name="rad" value="1">1</input>
+                                  <input type="radio" name="rad" value="1" style="-webkit-appearance: checkbox;">מתחילים</input>
                                   <br>
-                                  <input type="radio" name="rad" value="2">2</input>
+                                  <input type="radio" name="rad" value="2" style="-webkit-appearance: checkbox;">מתקדמים</input>
                                   <br>
-                                 <input type="radio" name="rad" value="3">3</input>
+                                 <input type="radio" name="rad" value="3" style="-webkit-appearance: checkbox;">אלופים</input>
                                 <br>
                                  <label for="birthdaytime">זמן התחלה</label>
                                   <input type="datetime-local" id="starttime" name="starttime">
@@ -170,10 +170,18 @@
                                 <input type="checkbox" name="box" value="1">here</input> -->
 
                                 <p>תיאור האתגר</p>
-                                <textarea id="comment" rows="4" cols="40">מלא פרטים על האתגר כאן</textarea>
+                                <textarea id="comment" rows="4" cols="40">הוסף פרטים על האתגר כאן</textarea>
                                 <br>
-                                <input id="submit" type="submit" value="Submit">
-                                  </form>
+								
+								<!--<form action="acapt.html" >
+                                    <input id="google" type="submit" value="פרסם">
+									</form>
+									
+									<buttom id="Submit"><a href="acapt.html">פרסם</a></buttom>-->
+									<ul class="actions">
+										<li><a href="acapt.html" class="button large">פרסם</a></li>
+									</ul>
+                                  
                                 </section>
                                 </article>
 
@@ -194,7 +202,7 @@
 								<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
 								<header>
 									<h2 id="username">שם משתמש</h2>
-									<p>רמה ||  מגדר || נקודות || סטטוס</a></p>
+									<p>5 ||  זכר || 100 || מתקדם</a></p>
 								</header>
 							</section>
 

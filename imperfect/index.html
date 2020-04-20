@@ -23,8 +23,7 @@
 						<nav class="links">
 							<ul>
 								<li><a href="profile.html">פרופיל</a></li>
-								<li><a href="challenge.html">אתגרים</a>
-									<!--
+								<li><a href="challenge.html">אתגרים</a><!--
 								 <ul>
 									<li>אתגרים קבועים</li>
 									<li>אתגרים חדשים</li>
@@ -104,6 +103,8 @@
 							</ul>
 						</section>
 					</section>
+
+						
 				<!-- Main -->
 					<div id="main">
 
@@ -113,19 +114,77 @@
 									<div class="title">
 										<!--<h2><a href="single.html">אתגר בניית פי'קאצו</a></h2>
 										<p>יצירה||קל||320 נקודות||פעיל</p>-->
-										<h2><a href="MyCalander.html">יומן אישי</a></h2>
-										<p>ברכותינו! עשית X פעולות מתוך היומן שלך היום~</p>
+										<h2><a href="single.html">יומן אישי</a></h2>
+										<p>ברכותינו! עשית 2 פעולות מתוך היומן שלך היום~</p>
 									</div>
 									
 								</header>
-								<a href="MyCalander.html" class="image featured"> <pre id="content" style="white-space: pre-wrap;">calendar</pre></a>
+								
+								<style>
+								ul.TaskList {
+									margin: 0;
+									padding: 0;
+									box-sizing: border-box;
+									
+								}
+								ul.TaskList li{
+									cursor: pointer;
+									position: relative;
+									padding: 12px 8px 12px 40px;
+									list-style-type: none;
+									background: #eee;
+									font-size: 18px;
+									transition: 0.2s;
+									
+									/* make the list items unselectable */
+									-webkit-user-select: none;
+									-moz-user-select: none;
+									-ms-user-select: none;
+									user-select: none;
+								}
+								/* Set all odd list items to a different color (zebra-stripes) */
+								ul.TaskList li:nth-child(odd) {
+									background: #f9f9f9;
+								}
+								/* Darker background-color on hover */
+								ul.TaskList li:hover {
+								  background: #ddd;
+								}
+								/* Style the do button */
+								.do {
+								  width:3em;
+								  background: greenyellow;
+								  position: absolute;
+								  top: 0;
+								  padding: 12px 16px 12px 16px;
+								}
+
+								.do:hover {
+								  background-color: darkgreen;
+								  color: white;
+								}
+								
+								.time{
+								  width:5em;
+								  background: cornflowerblue;
+								  position: absolute;
+								  top: 0;
+								  padding: 12px 16px 12px 16px;
+								  text-align: center;
+								  color: white;
+								}
+
+								</style>
+								<ul class="TaskList" id="content">
+									
+								</ul>
 								<p>כפישאתם יכולים לראות יש לכם כאן את היומן שלכם, פירושו של דבר שאתם יכולים לקחת ולראות כאן את כל המטלות שתכננתם לעצמכם מראש,במידה וביצעתם כבר מטלה מסוימת סמנו בוי את החלון הרצוי.</p>
 								<footer>
 									<ul class="actions">
-										<li><a href="MyCalander.html" class="button large">המשך לקרוא</a></li>
+										<li><a href="single.html" class="button large">המשך קריאה</a></li>
 									</ul>
 									<ul class="stats">
-										<li><a href="#">כללי</a></li>
+										<li><a href="#">יומן</a></li>
 										<li><a href="#" class="icon solid fa-heart">28</a></li>
 										<li><a href="#" class="icon solid fa-comment">128</a></li>
 									</ul>
@@ -448,12 +507,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
 								<header>
 									<h2 id="username">שם משתמש</h2>
-									<p>רמה ||  מגדר || נקודות || סטטוס</a></p>
+									<p>5 ||  זכר || 100 || מתקדם</a></p>
 								</header>
 							</section>
 
-						
-						
+
+
+
 						<!-- About -->
 							<section class="blurb">
 								<h2>עלינו</h2>
@@ -467,6 +527,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</ul>
 							</section>
 
+
+
+
 						<!--dont need it 
 							<section id="footer">
 								<ul class="icons">
@@ -479,7 +542,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								
 							</section>-->
 
-					</section>
+
+
+                    </section>
 
 			</div>
 
@@ -488,7 +553,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js"></script>			
 			<script type="text/javascript">
 				function onSignIn(googleUser) {
 					username = googleUser.getBasicProfile().getName();
@@ -582,9 +647,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				* @param {string} message Text to be placed in pre element.
 				*/
 				function appendPre(message) {
-				var pre = document.getElementById('content');
-				var textContent = document.createTextNode(message + '\n');
-				pre.appendChild(textContent);
+				//var pre = document.getElementById('content');
+				//var textContent = document.createTextNode(message + '\n');				
+				//pre.appendChild(textContent);
+				console.log(message);
 				}
 
 				/**
@@ -611,7 +677,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						if (!when) {
 						when = event.start.date;
 						}
-						appendPre(event.summary + ' (' + when + ')')
+						appendPre(event.summary + ' (' + when + ')')						
+						appendPre()
+						//convert to html tags
+						var ul = document.getElementById('content');
+					    var d = new Date(when);
+						var h = ''+d.getHours();
+						if(h.length == 1)
+							h = '0' + h;
+						var m = ''+d.getMinutes();
+						if(m.length == 1)
+							m = '0' + m;
+						var clock = h + ':' + m;						
+						var task = '<li><span>'+event.summary+'</span><a href="challenge_do.html"><span class="do" style="left:0;">בצע</span></a><a href="https://calendar.google.com/"><span class="do" style="left:3em;">ערוך</span></a><span class="time" style="left:6em;">'+clock+'</span></li>';
+						ul.insertAdjacentHTML('beforeend', task);
 					}
 					} else {
 					appendPre('No upcoming events found.');

@@ -10,44 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+    <cript src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script>
 	</head>
 
-	<body>
 
-		<script>
-			/* set up XMLHttpRequest */
-			var url = "C:\Users\L_cyber\Downloads\Setup\Colage\Ariel\ThirdYear\S2\HackU\CatchUpV2\assets\Data\RndChallenge.xlsx";
-			var oReq = new XMLHttpRequest();
-			oReq.open("GET", url, true);
-			oReq.responseType = "arraybuffer";
-	
-			oReq.onload = function(e) {
-				var arraybuffer = oReq.response;
-	
-				/* convert data to binary string */
-				var data = new Uint8Array(arraybuffer);
-				var arr = new Array();
-				for (var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
-				var bstr = arr.join("");
-	
-				/* Call XLSX */
-				var workbook = XLSX.read(bstr, {
-					type: "binary"
-				});
-	
-				/* DO SOMETHING WITH workbook HERE */
-				var first_sheet_name = RndChallenge.SheetNames[0];
-				/* Get worksheet */
-				var worksheet = RndChallenge.Sheets[first_sheet_name];
-				console.log(XLSX.utils.sheet_to_json(worksheet, {
-					raw: true
-				}));
-			}
-	
-			oReq.send();
-		</script>
-	</body>
 
 
 	<body class="is-preload">
@@ -62,7 +28,12 @@
 						<nav class="links">
 							<ul>
 								<li><a href="profile.html">פרופיל</a></li>
-								<li><a href="challenge.html">אתגרים</a></li>
+								<li><a href="challenge.html">אתגרים</a><!--
+								 <ul>
+									<li>אתגרים קבועים</li>
+									<li>אתגרים חדשים</li>
+									<li>מחולל אתגרים</li>
+								  </ul>--></li>
 								<li><a href="leaderboards.html">אלופים</a></li>
 								<li><a href="achievements.html">הישגים</a></li>
 								<li><a href="MyCalander.html">יומן אישי</a></li>
@@ -91,7 +62,7 @@
 								<form class="search" method="get" action="#">
 									<input type="text" name="query" placeholder="חיפוש" />
 								</form>
-							</section> 
+							</section>
 
 						<!-- Links -->
 							<section>
@@ -112,7 +83,7 @@
 										<a href="leaderboards.html">
 											<h3>אלופים</h3>
 											<p>כאן יש את טבלת האלופים והניקוד שהם הרוויחו</p>
-										</a>										
+										</a>
 									</li>
 									<li>
 										<a href="achievements.html">
@@ -126,7 +97,7 @@
 											<p>כאן ניתן לראות את היומן האישי שלכם המסונכרן עם גוגל</p>
 										</a>
 									</li>
-									
+
 								</ul>
 							</section>
 
@@ -141,56 +112,59 @@
 				<!-- Main -->
 				<div id="main">
 
-						
 
-						
+
+
 
 					<!--try-->
 					<article class="post">
 					<section id ="try">
 						<h2>שלום לך!</h2>
-						<p>זהו העמוד האישי שלך בו תתלהב מעצמך</p>
-						
+						<p>פה תוכל לקבל אתגר רנדומלי</p>
+						<input id="random" type="submit" value="צור אתגר רנדומלי">
+															<div id="ran">
+															</div>
 					</section>
 				</article>
 
-					
 
-					
+
+
 
 				</div>
 
 			<!-- Sidebar -->
-				<section id="sidebar">
+					<section id="sidebar">
 
-					<!-- Intro -->
-						<section id="intro">
-							<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
-							<header>
-								<h2 id="username">שם משתמש</h2>
-								<!--רמה ||  מגדר || נקודות || סטטוס-->
-								<p>מתחיל ||  זכר || 10 נקודות || מחובר</a></p>
-							</header>
-						</section>
-
-					
-
-					
-					<!-- About -->
-						<section class="blurb">
-							<h2>עלינו</h2>
-							<p>האתר הזה מיועד על מנת לאפשר לכולם לקחת חלק ברשת
-								אתגרים מגוונת.
-
-								תודה ל-freepik על התמונות.
-							</p>
-							<ul class="actions">
-								<li><a href="#" class="button">גלה עוד</a></li>
-							</ul>
-						</section>
+						<!-- Intro -->
+							<section id="intro">
+								<a href="#" class="logo"><img src="images/logo.jpg" alt="" id="logo"/></a>
+								<header>
+									<h2 id="username">שם משתמש</h2>
+									<p>5 ||  זכר || 100 || מתקדם</a></p>
+								</header>
+							</section>
 
 
-						<!--dont need it 
+
+
+						<!-- About -->
+							<section class="blurb">
+								<h2>עלינו</h2>
+								<p>האתר הזה מיועד על מנת לאפשר לכולם לקחת חלק ברשת
+									אתגרים מגוונת.
+
+									תודה ל-freepik על התמונות.
+								</p>
+								<ul class="actions">
+									<li><a href="#" class="button">גלה עוד</a></li>
+								</ul>
+							</section>
+
+
+
+
+						<!--dont need it
 							<section id="footer">
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -199,10 +173,12 @@
 									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
 									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
-								
+
 							</section>-->
 
-					</section>
+
+
+                    </section>
 
 			</div>
 
@@ -305,9 +281,9 @@
 				* @param {string} message Text to be placed in pre element.
 				*/
 				function appendPre(message) {
-				var pre = document.getElementById('content');
-				var textContent = document.createTextNode(message + '\n');
-				pre.appendChild(textContent);
+				//var pre = document.getElementById('content');
+				//var textContent = document.createTextNode(message + '\n');
+				//pre.appendChild(textContent);
 				}
 
 				/**
