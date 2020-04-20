@@ -10,6 +10,8 @@ c******* לשאול את אביב
 
 אתרים מהם לקחנו דברים
 https://www.intricatecloud.io/2019/07/adding-google-sign-in-to-your-webapp-pt-1/
+https://freepik.com
+https://fontawesome.com/
 
 האתר שנותן host
 https://cp1.awardspace.net/
