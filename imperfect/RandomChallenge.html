@@ -10,44 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-    <cript src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.2/xlsx.core.min.js"></script>
 	</head>
-
-	<body>
-
-		<script>
-			/* set up XMLHttpRequest */
-			var url = "C:\Users\L_cyber\Downloads\Setup\Colage\Ariel\ThirdYear\S2\HackU\CatchUpV2\assets\Data\RndChallenge.xlsx";
-			var oReq = new XMLHttpRequest();
-			oReq.open("GET", url, true);
-			oReq.responseType = "arraybuffer";
-
-			oReq.onload = function(e) {
-				var arraybuffer = oReq.response;
-
-				/* convert data to binary string */
-				var data = new Uint8Array(arraybuffer);
-				var arr = new Array();
-				for (var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
-				var bstr = arr.join("");
-
-				/* Call XLSX */
-				var workbook = XLSX.read(bstr, {
-					type: "binary"
-				});
-
-				/* DO SOMETHING WITH workbook HERE */
-				var first_sheet_name = RndChallenge.SheetNames[0];
-				/* Get worksheet */
-				var worksheet = RndChallenge.Sheets[first_sheet_name];
-				console.log(XLSX.utils.sheet_to_json(worksheet, {
-					raw: true
-				}));
-			}
-
-			oReq.send();
-		</script>
-	</body>
 
 
 	<body class="is-preload">
@@ -217,6 +181,7 @@
 			</div>
 
 		<!-- Scripts -->
+                        <script src="assets/js/random.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
@@ -315,9 +280,9 @@
 				* @param {string} message Text to be placed in pre element.
 				*/
 				function appendPre(message) {
-				var pre = document.getElementById('content');
-				var textContent = document.createTextNode(message + '\n');
-				pre.appendChild(textContent);
+//				var pre = document.getElementById('content');
+	//			var textContent = document.createTextNode(message + '\n');
+		//		pre.appendChild(textContent);
 				}
 
 				/**
